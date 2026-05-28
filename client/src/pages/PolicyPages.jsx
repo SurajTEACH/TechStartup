@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -37,22 +37,22 @@ export const Terms = () => (
     <h3 className="text-white text-lg font-bold mb-3">1. Acceptance of Terms</h3>
     <p className="text-gray-400 leading-relaxed mb-6">By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions and our Privacy Policy.</p>
     <h3 className="text-white text-lg font-bold mb-3">2. Services</h3>
-    <p className="text-gray-400 leading-relaxed mb-6">SK Software Innovation Solution provides software development, web design, and IT consulting services. We reserve the right to modify, suspend, or discontinue any service at any time.</p>
+    <p className="text-gray-400 leading-relaxed mb-6">CodeSetu Technologies Pvt. Ltd provides software development, web design, and IT consulting services. We reserve the right to modify, suspend, or discontinue any service at any time.</p>
     <h3 className="text-white text-lg font-bold mb-3">3. Intellectual Property</h3>
-    <p className="text-gray-400 leading-relaxed mb-6">All content, code, and materials created by SK Software remain our intellectual property unless explicitly transferred via written agreement. Clients receive a license to use deliverables upon full payment.</p>
+    <p className="text-gray-400 leading-relaxed mb-6">All content, code, and materials created by CodeSetu Technologies Pvt. Ltd remain our intellectual property unless explicitly transferred via written agreement. Clients receive a license to use deliverables upon full payment.</p>
     <h3 className="text-white text-lg font-bold mb-3">4. Payment</h3>
     <p className="text-gray-400 leading-relaxed mb-6">Payment terms are defined per project. A deposit may be required before work begins. Late payments may result in project suspension.</p>
     <h3 className="text-white text-lg font-bold mb-3">5. Limitation of Liability</h3>
-    <p className="text-gray-400 leading-relaxed mb-6">SK Software is not liable for any indirect, incidental, or consequential damages arising from the use of our services. Our maximum liability shall not exceed the amount paid for the specific service.</p>
+    <p className="text-gray-400 leading-relaxed mb-6">CodeSetu Technologies Pvt. Ltd is not liable for any indirect, incidental, or consequential damages arising from the use of our services. Our maximum liability shall not exceed the amount paid for the specific service.</p>
     <h3 className="text-white text-lg font-bold mb-3">6. Contact</h3>
-    <p className="text-gray-400 leading-relaxed">For any questions regarding these terms, please contact us at s.k.singh72718@gmail.com</p>
+    <p className="text-gray-400 leading-relaxed">For any questions regarding these terms, please contact us at kamleshshah1822@gmail.com</p>
   </PolicyPage>
 );
 
 export const Privacy = () => (
   <PolicyPage title="Privacy Policy" breadcrumb="Privacy Policy">
     <h2 className="text-white text-2xl font-bold mb-4">Privacy Policy</h2>
-    <p className="text-gray-400 leading-relaxed mb-6">SK Software Innovation Solution is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
+    <p className="text-gray-400 leading-relaxed mb-6">CodeSetu Technologies Pvt. Ltd is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
     <h3 className="text-white text-lg font-bold mb-3">1. Information We Collect</h3>
     <p className="text-gray-400 leading-relaxed mb-6">We collect information you provide directly, such as name, email address, phone number, and project details when you contact us or sign up for our services.</p>
     <h3 className="text-white text-lg font-bold mb-3">2. How We Use Your Information</h3>
@@ -62,14 +62,14 @@ export const Privacy = () => (
     <h3 className="text-white text-lg font-bold mb-3">4. Cookies</h3>
     <p className="text-gray-400 leading-relaxed mb-6">We use cookies to enhance your browsing experience. You may disable cookies through your browser settings, though this may affect functionality.</p>
     <h3 className="text-white text-lg font-bold mb-3">5. Contact</h3>
-    <p className="text-gray-400 leading-relaxed">For privacy-related questions, contact us at s.k.singh72718@gmail.com</p>
+    <p className="text-gray-400 leading-relaxed">For privacy-related questions, contact us at kamleshshah1822@gmail.com</p>
   </PolicyPage>
 );
 
 export const Refund = () => (
   <PolicyPage title="Refund Policy" breadcrumb="Refund Policy">
     <h2 className="text-white text-2xl font-bold mb-4">Refund Policy</h2>
-    <p className="text-gray-400 leading-relaxed mb-6">We strive to deliver high-quality services and ensure client satisfaction. Please read our refund policy carefully before purchasing our services.</p>
+    <p className="text-gray-400 leading-relaxed mb-6">CodeSetu Technologies Pvt. Ltd strives to deliver high-quality services and ensure client satisfaction. Please read our refund policy carefully before purchasing our services.</p>
     <h3 className="text-white text-lg font-bold mb-3">1. General Policy</h3>
     <p className="text-gray-400 leading-relaxed mb-6">All sales are final once work has commenced. Refunds are considered only in specific circumstances outlined below.</p>
     <h3 className="text-white text-lg font-bold mb-3">2. Eligibility for Refund</h3>
@@ -77,8 +77,8 @@ export const Refund = () => (
     <h3 className="text-white text-lg font-bold mb-3">3. Non-Refundable Items</h3>
     <p className="text-gray-400 leading-relaxed mb-6">Deposits, completed milestones, third-party costs, and domain/hosting fees are non-refundable.</p>
     <h3 className="text-white text-lg font-bold mb-3">4. Refund Process</h3>
-    <p className="text-gray-400 leading-relaxed mb-6">To request a refund, email us at s.k.singh72718@gmail.com within 7 days of the issue. Approved refunds are processed within 10 business days.</p>
+    <p className="text-gray-400 leading-relaxed mb-6">To request a refund, email us at kamleshshah1822@gmail.com within 7 days of the issue. Approved refunds are processed within 10 business days.</p>
     <h3 className="text-white text-lg font-bold mb-3">5. Contact</h3>
-    <p className="text-gray-400 leading-relaxed">For refund queries, contact: s.k.singh72718@gmail.com or +91 6265987559</p>
+    <p className="text-gray-400 leading-relaxed">For refund queries, contact:kamleshshah1822@gmail.com or +91 7049776747</p>
   </PolicyPage>
 );

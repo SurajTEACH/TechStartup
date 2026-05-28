@@ -9,6 +9,7 @@ import Support from './pages/Support';
 import Careers from './pages/Careers';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import WhatsAppButton from './components/WhatsAppButton';
 
 import { Terms, Privacy, Refund } from './pages/PolicyPages';
 import BlogDetails from './pages/BlogDetails';
@@ -43,6 +44,7 @@ function App() {
           <Route path="/refund" element={<Refund />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        <WhatsAppButton />
       </BrowserRouter>
     </ThemeProvider>
   );

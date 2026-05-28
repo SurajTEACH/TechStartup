@@ -151,12 +151,18 @@ const About = () => (
         
                         {/* Main Card */}
                         <div className="relative card-style rounded-3xl p-6 border border-blue-500/20">
-                          <img
-                            src="/about.svg"
-                            alt="about"
-                            className="w-full object-contain animate-float"
-                          />
-        
+                          <div className="relative card-style rounded-3xl p-6 border border-blue-500/20 h-[400px] overflow-hidden">
+                            <video
+                              autoPlay
+                              loop
+                              muted
+                              playsInline
+                              className="w-full h-full object-cover rounded-2xl"
+                            >
+                              <source src="/aboutSection.mp4" type="video/mp4" />
+                            </video>
+                          </div>
+                                  
                           {/* Floating Badge */}
                           <div className="absolute -top-5 -right-5 bg-accent text-black text-sm font-bold px-4 py-2 rounded-full shadow-lg">
                             MERN Stack

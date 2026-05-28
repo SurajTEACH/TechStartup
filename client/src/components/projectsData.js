@@ -1,27 +1,22 @@
-// src/components/projectsData.js
+//src/components/projectsData.js
 
 const projectsData = [
   {
     id: 1,
-    slug: "modern-ecommerce-platform",
+    slug: "smart-inventory-management-system",
 
-    title: "Modern Ecommerce Platform",
+    title: "Smart Inventory Management System",
 
     shortDesc:
-      "A scalable ecommerce platform with secure payments and admin dashboard.",
+      "A powerful inventory solution with stock tracking, billing, analytics, and warehouse management.",
 
     image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200",
+      "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1200",
 
-    categories: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Stripe",
-    ],
+    categories: ["MERN Stack", "Inventory", "Dashboard", "Enterprise"],
 
     description:
-      "This ecommerce platform was developed using the MERN stack with modern UI/UX design, secure authentication, payment integration, and responsive layouts. It helps businesses manage products, orders, and customers efficiently.",
+      "This inventory management platform helps businesses manage products, suppliers, warehouses, billing, and stock movement efficiently with real-time analytics and smart reporting.",
 
     technologies: [
       "React.js",
@@ -30,16 +25,16 @@ const projectsData = [
       "MongoDB",
       "Tailwind CSS",
       "JWT Authentication",
-      "Stripe Payment",
+      "Chart.js",
     ],
 
     features: [
-      "Responsive UI Design",
-      "Secure Authentication",
-      "Admin Dashboard",
-      "Order Management",
-      "Payment Gateway Integration",
-      "SEO Friendly",
+      "Stock Management",
+      "Warehouse Tracking",
+      "Billing & Invoice System",
+      "Sales Analytics",
+      "Supplier Management",
+      "Responsive Dashboard",
     ],
 
     liveLink: "https://example.com",
@@ -49,42 +44,37 @@ const projectsData = [
 
   {
     id: 2,
-    slug: "ai-chat-application",
+    slug: "business-crm-platform",
 
-    title: "AI Chat Application",
+    title: "Business CRM Platform",
 
     shortDesc:
-      "An AI-powered real-time chat application with authentication and smart responses.",
+      "A modern CRM platform to manage leads, clients, sales, employees, and customer engagement.",
 
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200",
 
-    categories: [
-      "React",
-      "Socket.io",
-      "AI",
-      "Firebase",
-    ],
+    categories: ["CRM", "React", "Business", "Dashboard"],
 
     description:
-      "This AI chat application provides real-time messaging with AI-generated responses, secure login, and a clean responsive interface. It supports live communication and intelligent chatbot integration.",
+      "This CRM platform helps startups and enterprises streamline customer management, sales tracking, employee tasks, and performance analytics through a centralized dashboard.",
 
     technologies: [
       "React.js",
-      "Firebase",
-      "Socket.io",
-      "Tailwind CSS",
-      "OpenAI API",
       "Node.js",
+      "MongoDB",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "JWT Authentication",
     ],
 
     features: [
-      "Real-time Messaging",
-      "AI Chatbot Integration",
-      "Dark/Light Mode",
-      "Responsive Design",
-      "Authentication System",
-      "Fast Performance",
+      "Lead Management",
+      "Sales Tracking",
+      "Employee Task System",
+      "Analytics Dashboard",
+      "Role-based Access",
+      "Real-time Notifications",
     ],
 
     liveLink: "https://example.com",
@@ -94,42 +84,157 @@ const projectsData = [
 
   {
     id: 3,
-    slug: "school-management-system",
+    slug: "modern-cms-platform",
 
-    title: "School Management System",
+    title: "Modern CMS Platform",
 
     shortDesc:
-      "A complete school management solution for students, teachers, and administration.",
+      "A scalable CMS platform for managing blogs, media, pages, and dynamic website content.",
 
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQob0xJoWVKPHZ3k-pzE0IKlNl7OI3d3YdMiw&s",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
 
-    categories: [
-      "MERN Stack",
-      "Dashboard",
-      "Education",
-      "API",
-    ],
+    categories: ["CMS", "Next.js", "Admin Panel", "Web App"],
 
     description:
-      "The school management system helps schools manage students, teachers, attendance, exams, and fees through a centralized dashboard with secure access and real-time data management.",
+      "This content management system allows businesses to manage websites, blogs, media files, SEO settings, and users with an easy-to-use admin interface.",
+
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Cloudinary",
+      "JWT",
+    ],
+
+    features: [
+      "Blog Management",
+      "Media Upload System",
+      "SEO Optimization",
+      "User Roles & Permissions",
+      "Dynamic Pages",
+      "Fast Admin Dashboard",
+    ],
+
+    liveLink: "https://example.com",
+
+    github: "https://github.com/example",
+  },
+
+  {
+    id: 4,
+    slug: "food-delivery-mobile-app",
+
+    title: "Food Delivery Mobile App",
+
+    shortDesc:
+      "A modern food delivery application with live tracking and secure online payments.",
+
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200",
+
+    categories: ["Mobile App", "React Native", "Food Tech", "Startup"],
+
+    description:
+      "The food delivery app enables users to order food online, track deliveries in real-time, and make secure payments with a seamless mobile experience.",
+
+    technologies: [
+      "React Native",
+      "Firebase",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "Google Maps API",
+    ],
+
+    features: [
+      "Live Order Tracking",
+      "Secure Payments",
+      "Push Notifications",
+      "Restaurant Dashboard",
+      "User Authentication",
+      "Responsive UI",
+    ],
+
+    liveLink: "https://example.com",
+
+    github: "https://github.com/example",
+  },
+
+  {
+    id: 5,
+    slug: "ai-powered-chat-application",
+
+    title: "AI Powered Chat Application",
+
+    shortDesc:
+      "An AI-based real-time chat platform with intelligent chatbot responses and live messaging.",
+
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200",
+
+    categories: ["AI", "Chat App", "Socket.io", "Web App"],
+
+    description:
+      "This AI chat application combines real-time communication with AI-powered smart replies, secure authentication, and responsive UI for modern businesses and communities.",
+
+    technologies: [
+      "React.js",
+      "Socket.io",
+      "Firebase",
+      "Node.js",
+      "OpenAI API",
+      "Tailwind CSS",
+    ],
+
+    features: [
+      "AI Chatbot",
+      "Real-time Messaging",
+      "Authentication System",
+      "Dark & Light Mode",
+      "Responsive Design",
+      "Fast Performance",
+    ],
+
+    liveLink: "https://example.com",
+
+    github: "https://github.com/example",
+  },
+
+  {
+    id: 6,
+    slug: "hr-employee-management-system",
+
+    title: "HR & Employee Management System",
+
+    shortDesc:
+      "A smart HR management platform for employee tracking, attendance, payroll, and performance.",
+
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200",
+
+    categories: ["HRMS", "Enterprise", "Dashboard", "Management"],
+
+    description:
+      "This HR management system simplifies employee attendance, payroll processing, leave management, and performance tracking with a modern dashboard interface.",
 
     technologies: [
       "React.js",
       "Node.js",
+      "MySQL",
       "Express.js",
-      "MongoDB",
-      "JWT",
-      "Chart.js",
+      "Tailwind CSS",
+      "JWT Authentication",
     ],
 
     features: [
-      "Student Management",
-      "Teacher Dashboard",
+      "Employee Management",
       "Attendance Tracking",
-      "Fee Management",
-      "Exam Reports",
-      "Analytics Dashboard",
+      "Payroll System",
+      "Leave Requests",
+      "Performance Analytics",
+      "Admin Dashboard",
     ],
 
     liveLink: "https://example.com",
