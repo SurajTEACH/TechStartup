@@ -10,7 +10,7 @@ const blogData = [
     "shortDesc": "In today's competitive digital landscape, businesses need more than off-the-shelf solutions to stay ahead.",
     "description": "Custom software development enables organizations to build applications tailored specifically to their workflows, customers, and long-term goals.",
     "image": "https://res.cloudinary.com/dxkxzqc77/image/upload/v1767468624/blog-images/qffyvysjmjomokpj5n7h.jpg",
-    "author": "SURESH KUMAR SINGH",
+    "author": "Kamlesh Kumar Shah",
     "date": "January 4, 2026",
     "views": 27,
     "categories": [
@@ -111,7 +111,7 @@ const blogData = [
     "shortDesc": "Blockchain is transforming how businesses record, verify, and share data — creating a decentralized world built on trust.",
     "description": "Blockchain technology provides a secure, transparent, and tamper-proof way to record transactions and manage data across decentralized networks without relying on a central authority.",
     "image": "https://res.cloudinary.com/dxkxzqc77/image/upload/v1776187046/uploads/trpww4bbz31iuny5rdk5.jpg",
-    "author": "SURESH KUMAR SINGH",
+    "author": "Kamlesh Kumar Shah",
     "date": "January 18, 2026",
     "views": 34,
     "categories": [
@@ -211,7 +211,7 @@ const blogData = [
     "shortDesc": "Modern software development goes beyond writing code — it's about architecting systems that scale, stay secure, and evolve with business needs.",
     "description": "Building future-ready software requires a strategic approach that combines clean architecture, robust security practices, and scalable infrastructure to deliver applications that grow with your business.",
     "image": "https://res.cloudinary.com/dxkxzqc77/image/upload/v1767464245/blog-images/rasxlxvejxzhtxd5mwej.png",
-    "author": "SURESH KUMAR SINGH",
+    "author": "Kamlesh Kumar Shah",
     "date": "February 2, 2026",
     "views": 19,
     "categories": [
