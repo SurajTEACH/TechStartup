@@ -198,8 +198,8 @@ const Footer = () => {
           {/* Col 2 — Address II + Map */}
           <div className="footer-col-2">
             <FHead>Address II</FHead>
-            <CItem icon={<PhoneIcon />} label="MOBILE" value="+91 9584385703" href="tel:+919584385703" />
-            <CItem icon={<LocIcon />} value="Plot No 308 Shahzada Bagh City New Delhi 110035" />
+            <CItem icon={<PhoneIcon />} label="MOBILE" value="+91 7049776747" href="tel:+917049776747" />
+            <CItem icon={<LocIcon />} value="First Floor, Tamara Uprise Rahatani, Pune, 411017" />
 
             <div style={{ marginTop: 12 }}>
               <p
