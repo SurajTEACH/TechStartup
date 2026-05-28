@@ -335,25 +335,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* ── Bottom Binary Ticker ── */}
-        <div
-          style={{
-            height: 24,
-            background: "linear-gradient(90deg,#1e3a8a,#2563eb,#1e3a8a)",
-            display: "flex",
-            alignItems: "center",
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-            borderTop: "1px solid #1d4ed8",
-          }}
-        >
-          <span
-            className="binary-scroll-rev"
-            style={{ fontFamily: "monospace", fontSize: 9, color: "#93c5fd", letterSpacing: "2px", paddingLeft: 8 }}
-          >
-            {binaryStr}
-          </span>
-        </div>
+       
+        
       </footer>
     </>
   );
