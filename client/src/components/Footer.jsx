@@ -255,12 +255,12 @@ Pune, 411017 "
           <CItem
             icon={<PhoneIcon />}
             label="MOBILE"
-            value="+91 9584385703"
-            href="tel:+919584385703"
+            value="+91 7049776747"
+            href="tel:+917049776747"
           />
           <CItem
             icon={<LocIcon />}
-            value="Plot No 308 Shahzada Bagh City New Delhi 110035"
+            value="First Floor, Tamara Uprise Rahatani, pune, 411017"
           />
 
           <div style={{ marginTop: 12 }}>
