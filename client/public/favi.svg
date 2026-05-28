@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="gradC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00AEEF"></stop>
+      <stop offset="100%" stop-color="#FF7A00"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Main C Shape -->
+  <path d="M390 110
+       A180 180 0 1 0 390 402
+       L340 360
+       A120 120 0 1 1 340 152
+       Z" fill="url(#gradC)"></path>
+
+  <!-- Bridge -->
+  <g fill="#ffffff">
+    <path d="M150 280 L362 280 L256 190 Z"></path>
+    <rect x="225" y="150" width="18" height="130" rx="4"></rect>
+    <rect x="269" y="150" width="18" height="130" rx="4"></rect>
+
+    <!-- Bridge Lines -->
+    <line x1="180" y1="270" x2="225" y2="190" stroke="#ffffff" stroke-width="6"></line>
+    <line x1="210" y1="270" x2="225" y2="190" stroke="#ffffff" stroke-width="6"></line>
+    <line x1="300" y1="270" x2="287" y2="190" stroke="#ffffff" stroke-width="6"></line>
+    <line x1="330" y1="270" x2="287" y2="190" stroke="#ffffff" stroke-width="6"></line>
+  </g>
+
+  <!-- Pixels -->
+  <g fill="#00AEEF">
+    <rect x="60" y="210" width="18" height="18"></rect>
+    <rect x="90" y="180" width="18" height="18"></rect>
+    <rect x="120" y="210" width="18" height="18"></rect>
+    <rect x="90" y="240" width="18" height="18"></rect>
+  </g>
+
+  <g fill="#FF7A00">
+    <rect x="70" y="270" width="14" height="14"></rect>
+    <rect x="110" y="290" width="14" height="14"></rect>
+  </g>
+</svg>
