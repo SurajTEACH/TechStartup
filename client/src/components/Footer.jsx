@@ -1,0 +1,632 @@
+import { Link } from "react-router-dom";
+import { useTheme } from "../context/ThemeContext";
+
+// Binary string repeated enough to fill + loop seamlessly
+const bin =
+  "01001000  01100101  01101100  01101100  01101111  00100000  01010111  01101111  01110010  01101100  01100100  ";
+const binaryStr = bin.repeat(6);
+
+const Footer = () => {
+
+     const { isDark } = useTheme();
+  return (
+    <footer
+      style={{
+        background: "var(--footer-bg)",
+        color: "var(--text-primary)",
+        borderTop: "2.5px solid #2563eb",
+        borderBottom: "2.5px solid #2563eb",
+        position: "relative",
+        overflow: "hidden",
+        transition: "background 0.3s, color 0.3s",
+      }}
+    >
+      {/* ── Top Binary Ticker ── */}
+      <div
+        style={{
+          height: 24,
+          background: "linear-gradient(90deg,#1e3a8a,#2563eb,#1e3a8a)",
+          display: "flex",
+          alignItems: "center",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+        }}
+      >
+        <span
+          className="binary-scroll-fwd"
+          style={{
+            fontFamily: "monospace",
+            fontSize: 9,
+            color: "#93c5fd",
+            letterSpacing: "2px",
+            paddingLeft: 8,
+          }}
+        >
+          {binaryStr}
+        </span>
+      </div>
+
+      {/* ── Rotating Ring (center bg) ── */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          width: 380,
+          height: 380,
+          pointerEvents: "none",
+          zIndex: 0,
+          opacity: 0.06,
+        }}
+      >
+        <svg
+          className="animate-spin-slow"
+          style={{ width: "100%", height: "100%", display: "block" }}
+          viewBox="0 0 400 400"
+          fill="none"
+        >
+          <circle
+            cx="200"
+            cy="200"
+            r="185"
+            stroke="#16a34a"
+            strokeWidth="8"
+            strokeDasharray="60 20"
+          />
+          <circle
+            cx="200"
+            cy="200"
+            r="145"
+            stroke="#16a34a"
+            strokeWidth="4"
+            strokeDasharray="30 15"
+          />
+          <circle
+            cx="200"
+            cy="200"
+            r="105"
+            stroke="#16a34a"
+            strokeWidth="6"
+            strokeDasharray="80 10"
+          />
+          <circle
+            cx="200"
+            cy="200"
+            r="65"
+            stroke="#16a34a"
+            strokeWidth="3"
+            strokeDasharray="20 12"
+          />
+        </svg>
+      </div>
+
+      {/* ── Floating code chars ── */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          pointerEvents: "none",
+          overflow: "hidden",
+          zIndex: 0,
+        }}
+      >
+        <span
+          className="animate-float-1"
+          style={{
+            position: "absolute",
+            fontFamily: "monospace",
+            fontWeight: 900,
+            color: "#2563eb",
+            opacity: 0.05,
+            fontSize: 52,
+            top: "18%",
+            left: "3%",
+            userSelect: "none",
+          }}
+        >
+          {"{"}
+        </span>
+        <span
+          className="animate-float-2"
+          style={{
+            position: "absolute",
+            fontFamily: "monospace",
+            fontWeight: 900,
+            color: "#2563eb",
+            opacity: 0.05,
+            fontSize: 52,
+            top: "50%",
+            right: "3%",
+            userSelect: "none",
+          }}
+        >
+          {"}"}
+        </span>
+        <span
+          className="animate-float-3"
+          style={{
+            position: "absolute",
+            fontFamily: "monospace",
+            fontWeight: 900,
+            color: "#2563eb",
+            opacity: 0.05,
+            fontSize: 40,
+            bottom: "28%",
+            left: "28%",
+            userSelect: "none",
+          }}
+        >
+          {"<"}
+        </span>
+        <span
+          className="animate-float-4"
+          style={{
+            position: "absolute",
+            fontFamily: "monospace",
+            fontWeight: 900,
+            color: "#2563eb",
+            opacity: 0.05,
+            fontSize: 40,
+            top: "22%",
+            right: "25%",
+            userSelect: "none",
+          }}
+        >
+          {"/>"}
+        </span>
+      </div>
+
+      {/* ── Main Grid ── */}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 10,
+          maxWidth: 1240,
+          margin: "0 auto",
+          padding: "28px 16px 0 16px",
+          display: "grid",
+          gridTemplateColumns: "repeat(12, 1fr)",
+          gap: 12,
+        }}
+      >
+        {/* Col 1 — Logo + Address I (3 cols) */}
+        <div style={{ gridColumn: "span 3" }}>
+          <a
+            href="/"
+            style={{
+            display: "inline-flex",
+            alignItems: "center",
+            background: "transparent",
+            padding: 0,
+            borderRadius: 0,
+            marginBottom: 14,
+            textDecoration: "none",
+          }}
+          >
+          <img
+              src={isDark ? "/logoCompnay.png" : "/logolight.jpeg"}
+              alt="CodeSetu Logo"
+              style={{
+                width: 220,
+                height: "auto",
+                objectFit: "contain",
+                display: "block",
+              }}
+            />
+
+          </a>
+
+          <p
+            style={{
+              fontSize: 13,
+              color: "var(--text-secondary)",
+              lineHeight: 1.7,
+              marginBottom: 14,
+            }}
+          >
+            We provide end-to-end IT solutions including custom software, web
+            &amp; mobile apps, and cloud solutions to help your business thrive.
+          </p>
+
+          <FHead>Address I</FHead>
+          <CItem
+            icon={<LocIcon />}
+            value="First Floor, Tamara Uprise Rahatani,
+Pune, 411017 "
+          />
+          <CItem
+            icon={<PhoneIcon />}
+            label="PHONE"
+            value="+91 7049776747"
+            href="tel:+917049776747"
+          />
+          <CItem
+            icon={<MailIcon />}
+            label="EMAIL"
+            value="kamleshshah1822@gmail.com"
+            href="kamleshshah1822@gmail.com"
+          />
+        </div>
+
+        {/* Col 2 — Address II + Map (4 cols) */}
+        <div style={{ gridColumn: "span 4" }}>
+          <FHead>Address II</FHead>
+          <CItem
+            icon={<PhoneIcon />}
+            label="MOBILE"
+            value="+91 9584385703"
+            href="tel:+919584385703"
+          />
+          <CItem
+            icon={<LocIcon />}
+            value="Plot No 308 Shahzada Bagh City New Delhi 110035"
+          />
+
+          <div style={{ marginTop: 12 }}>
+            <p
+              style={{
+                fontSize: 13,
+                fontWeight: 700,
+                color: "var(--text-primary)",
+                marginBottom: 8,
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+              }}
+            >
+              <svg
+                style={{
+                  width: 14,
+                  height: 14,
+                  stroke: "#3b82f6",
+                  flexShrink: 0,
+                }}
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                />
+              </svg>
+              Location Map
+            </p>
+            <div
+              style={{
+                width: "100%",
+                height: 180,
+                borderRadius: 10,
+                overflow: "hidden",
+                border: "1px solid var(--border-color)",
+              }}
+            >
+              <iframe
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuL6U4eXJrbhW8VO6YhjQ9WHpLa-DXCvosUQ&s"
+                width="100%"
+                height="100%"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Location Map"
+                style={{ border: 0 }}
+              />
+            </div>
+            <a
+              href="https://www.google.com/maps/place/Tamara+Uprise/@18.6055632,73.7833508,418m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3bc2b92079f4046d:0xff65689f48a7dbd3!2sTamara+Uprise!8m2!3d18.605513!4d73.7846814!16s%2Fg%2F11shdb4srv!3m5!1s0x3bc2b92079f4046d:0xff65689f48a7dbd3!8m2!3d18.605513!4d73.7846814!16s%2Fg%2F11shdb4srv?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                marginTop: 6,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 5,
+                fontSize: 12,
+                fontWeight: 700,
+                color: "#3b82f6",
+                textDecoration: "none",
+              }}
+            >
+              View on Google Maps
+              <svg
+                style={{ width: 13, height: 13, stroke: "#3b82f6" }}
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Col 3 — Quick Links + Our Services (2 cols) */}
+        <div style={{ gridColumn: "span 2" }}>
+          <FHead>Quick Links</FHead>
+          <FLinks
+            items={[
+              { name: "Blog", to: "/blog" },
+              { name: "About", to: "/about" },
+              { name: "Services", to: "/support" },
+              { name: "Contact", to: "/support" },
+              { name: "Careers", to: "/careers" },
+            ]}
+          />
+          <FHead style={{ marginTop: 20 }}>Our Services</FHead>
+          <FLinks
+            items={[
+              { name: "Web Development", to: "/support" },
+              { name: "Mobile Apps", to: "/support" },
+              { name: "Cloud Solutions", to: "/support" },
+              { name: "IT Consulting", to: "/support" },
+            ]}
+          />
+        </div>
+
+        {/* Col 4 — Support (3 cols) */}
+        <div style={{ gridColumn: "span 3" }}>
+          <FHead>Support</FHead>
+          <FLinks
+            items={[
+              { name: "Support Center", to: "/support" },
+              { name: "Terms & Conditions", to: "/terms" },
+              { name: "Refund Policy", to: "/refund" },
+              { name: "Privacy Policy", to: "/privacy" },
+            ]}
+          />
+        </div>
+      </div>
+
+      {/* ── Copyright Bar ── */}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 10,
+          maxWidth: 1240,
+          margin: "0 auto",
+          padding: "12px 16px",
+          borderTop: "1px solid var(--border-color)",
+          marginTop: 20,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 8,
+        }}
+      >
+        <p
+          style={{
+            fontSize: 13,
+            color: "var(--text-secondary)",
+            fontWeight: 600,
+          }}
+        >
+          © 2026&nbsp;
+          <strong style={{ color: "var(--text-primary)", fontWeight: 800 }}>
+            CodeSetu Technologies Pvt. Ltd.
+          </strong>
+          . &nbsp;All Rights Reserved.
+        </p>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 4,
+            fontSize: 12,
+            color: "var(--text-muted)",
+            fontWeight: 600,
+          }}
+        >
+          <span>Made with</span>
+          <span
+            style={{
+              color: "#ef4444",
+              animation: "pulse 1.5s ease-in-out infinite",
+            }}
+          >
+            ♥
+          </span>
+          <span>in India</span>
+        </div>
+      </div>
+
+      {/* ── Bottom Binary Ticker (reversed) ── */}
+      <div
+        style={{
+          height: 24,
+          background: "linear-gradient(90deg,#1e3a8a,#2563eb,#1e3a8a)",
+          display: "flex",
+          alignItems: "center",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          borderTop: "1px solid #1d4ed8",
+        }}
+      >
+        <span
+          className="binary-scroll-rev"
+          style={{
+            fontFamily: "monospace",
+            fontSize: 9,
+            color: "#93c5fd",
+            letterSpacing: "2px",
+            paddingLeft: 8,
+          }}
+        >
+          {binaryStr}
+        </span>
+      </div>
+    </footer>
+  );
+};
+
+/* ─── Helper Components ─── */
+
+const FHead = ({ children, style = {} }) => (
+  <h3
+    style={{
+      fontSize: 14,
+      fontWeight: 800,
+      color: "var(--text-primary)",
+      borderBottom: "1px solid var(--border-color)",
+      paddingBottom: 7,
+      marginBottom: 10,
+      ...style,
+    }}
+  >
+    {children}
+  </h3>
+);
+
+const FLinks = ({ items }) => (
+  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+    {items.map((it) => (
+      <li key={it.name} style={{ marginBottom: 8 }}>
+        <Link
+          to={it.to}
+          style={{
+            fontSize: 13,
+            fontWeight: 600,
+            color: "var(--text-secondary)",
+            textDecoration: "none",
+            transition: "color 0.2s",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = "var(--accent)")}
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.color = "var(--text-secondary)")
+          }
+        >
+          {it.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
+
+const CItem = ({ icon, label, value, href }) => (
+  <div
+    style={{
+      display: "flex",
+      alignItems: "flex-start",
+      gap: 8,
+      marginBottom: 10,
+    }}
+  >
+    <div
+      style={{
+        width: 28,
+        height: 28,
+        borderRadius: 7,
+        background: "rgba(79,110,247,0.1)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+        marginTop: 2,
+      }}
+    >
+      {icon}
+    </div>
+    <div>
+      {label && (
+        <span
+          style={{
+            display: "block",
+            fontSize: 10,
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: "1px",
+            color: "var(--text-muted)",
+            marginBottom: 2,
+          }}
+        >
+          {label}
+        </span>
+      )}
+      {href ? (
+        <a
+          href={href}
+          style={{
+            fontSize: 12,
+            fontWeight: 600,
+            color: "var(--text-secondary)",
+            textDecoration: "none",
+            transition: "color 0.2s",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = "var(--accent)")}
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.color = "var(--text-secondary)")
+          }
+        >
+          {value}
+        </a>
+      ) : (
+        <span
+          style={{
+            fontSize: 12,
+            fontWeight: 600,
+            color: "var(--text-secondary)",
+          }}
+        >
+          {value}
+        </span>
+      )}
+    </div>
+  </div>
+);
+
+const LocIcon = () => (
+  <svg
+    style={{ width: 14, height: 14, stroke: "#3b82f6" }}
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+    />
+  </svg>
+);
+const PhoneIcon = () => (
+  <svg
+    style={{ width: 14, height: 14, stroke: "#22c55e" }}
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+    />
+  </svg>
+);
+const MailIcon = () => (
+  <svg
+    style={{ width: 14, height: 14, stroke: "#a855f7" }}
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    />
+  </svg>
+);
+
+export default Footer;

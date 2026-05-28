@@ -1,0 +1,25 @@
+/* Footer.css */
+
+.binary-scroll-fwd { animation: tickFwd 20s linear infinite; }
+.binary-scroll-rev { animation: tickRev 20s linear infinite; }
+@keyframes tickFwd { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@keyframes tickRev { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
+
+/* Green loop ring spin — add to tailwind.config if needed */
+.animate-spin-slow { animation: spinSlow 12s linear infinite; }
+@keyframes spinSlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* Floating bg chars */
+.animate-float-1 { animation: flt 7s ease-in-out infinite; }
+.animate-float-2 { animation: flt 7s ease-in-out infinite; animation-delay: 1.5s; }
+.animate-float-3 { animation: flt 7s ease-in-out infinite; animation-delay: 2.5s; }
+.animate-float-4 { animation: flt 7s ease-in-out infinite; animation-delay: 3.5s; }
+@keyframes flt { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-16px) rotate(5deg); } }
+
+/* Section heading underline slide-in */
+.footer-heading-line { animation: slideIn 0.6s ease 0.4s forwards; }
+@keyframes slideIn { to { width: 100%; } }
+
+/* tailwind.config.js addition:
+  theme: { extend: { animation: { 'spin-slow': 'spin 12s linear infinite' } } }
+*/
