@@ -4,7 +4,7 @@
 
 const blogData = [
   {
-<<<<<<< HEAD
+
     id: 1,
     slug: "artificial-intelligence-future-business",
     title:
@@ -319,20 +319,6 @@ const blogData = [
       "Flutter",
       "UI/UX",
       "Cross Platform",
-=======
-    "id": 1,
-    "slug": "custom-software-development",
-    "title": "The Importance of Custom Software Development for Modern Businesses",
-    "shortDesc": "In today's competitive digital landscape, businesses need more than off-the-shelf solutions to stay ahead.",
-    "description": "Custom software development enables organizations to build applications tailored specifically to their workflows, customers, and long-term goals.",
-    "image": "https://res.cloudinary.com/dxkxzqc77/image/upload/v1767468624/blog-images/qffyvysjmjomokpj5n7h.jpg",
-    "author": "Kamlesh Kumar Shah",
-    "date": "January 4, 2026",
-    "views": 27,
-    "categories": [
-      "Software Development",
-      "Web Development",
->>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
       "Application Development",
       "Digital Products",
       "User Experience"
@@ -385,7 +371,7 @@ const blogData = [
   },
 
   {
-<<<<<<< HEAD
+
     id: 6,
     slug: "digital-marketing-business-growth-strategies",
     title:
@@ -410,33 +396,6 @@ const blogData = [
       "Analytics",
       "Online Advertising",
       "Lead Generation"
-=======
-    "id": 2,
-    "slug": "blockchain-technology",
-    "title": "Blockchain Technology: Revolutionizing Trust, Transparency, and Digital Transactions",
-    "shortDesc": "Blockchain is transforming how businesses record, verify, and share data — creating a decentralized world built on trust.",
-    "description": "Blockchain technology provides a secure, transparent, and tamper-proof way to record transactions and manage data across decentralized networks without relying on a central authority.",
-    "image": "https://res.cloudinary.com/dxkxzqc77/image/upload/v1776187046/uploads/trpww4bbz31iuny5rdk5.jpg",
-    "author": "Kamlesh Kumar Shah",
-    "date": "January 18, 2026",
-    "views": 34,
-    "categories": [
-      "Blockchain",
-      "Web3",
-      "Decentralization",
-      "Cryptocurrency",
-      "Smart Contracts",
-      "DeFi",
-      "NFT",
-      "Distributed Ledger",
-      "Ethereum",
-      "Bitcoin",
-      "Fintech",
-      "Cybersecurity",
-      "Digital Transformation",
-      "Cloud Computing",
-      "Enterprise Blockchain"
->>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
     ],
     content: [
       {
@@ -481,137 +440,7 @@ const blogData = [
             text: "tracking campaigns and improving results"
           }
         ]
-<<<<<<< HEAD
-=======
-      },
-      {
-        "type": "list-section",
-        "heading": "Key Applications of Blockchain Technology",
-        "items": [
-          { "bold": "Cryptocurrency and Digital Payments", "text": "enabling fast, low-cost, borderless transactions without banks" },
-          { "bold": "Smart Contracts", "text": "self-executing agreements coded on the blockchain that run automatically when conditions are met" },
-          { "bold": "Supply Chain Management", "text": "providing end-to-end visibility and traceability of goods from origin to delivery" },
-          { "bold": "Decentralized Finance (DeFi)", "text": "offering financial services like lending and trading without traditional intermediaries" },
-          { "bold": "Digital Identity Verification", "text": "giving individuals control over their personal data and credentials" },
-          { "bold": "Healthcare Data Management", "text": "securing patient records and enabling safe, consent-based data sharing" }
-        ]
-      },
-      {
-        "type": "section",
-        "heading": "Why Blockchain Matters for Businesses",
-        "paragraphs": [
-          "For enterprises, blockchain eliminates the inefficiencies of traditional systems — reducing paperwork, minimizing fraud, cutting transaction costs, and accelerating settlement times. Industries from banking and insurance to logistics and real estate are actively integrating blockchain to build <strong>faster, more transparent, and more trustworthy</strong> business processes.",
-          "Blockchain also enables new business models that were previously impossible — such as tokenization of assets, programmable money, and trustless collaboration between organizations that do not necessarily know or trust each other."
-        ]
-      },
-      {
-        "type": "section",
-        "heading": "Challenges and the Road Ahead",
-        "paragraphs": [
-          "Despite its enormous potential, blockchain adoption faces challenges including scalability limitations, high energy consumption in some consensus models, regulatory uncertainty, and the complexity of integrating with legacy systems. However, ongoing innovations such as Layer 2 scaling solutions, energy-efficient proof-of-stake protocols, and enterprise-grade blockchain frameworks like Hyperledger are rapidly addressing these hurdles.",
-          "As the technology matures, blockchain is poised to become as foundational to the digital economy as the internet itself — reshaping how value is created, transferred, and trusted across the globe."
-        ]
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "software-development-building-scalable-secure-and-future-ready-solutions",
-    "title": "Software Development: Building Scalable, Secure, and Future-Ready Solutions",
-    "shortDesc": "Modern software development goes beyond writing code — it's about architecting systems that scale, stay secure, and evolve with business needs.",
-    "description": "Building future-ready software requires a strategic approach that combines clean architecture, robust security practices, and scalable infrastructure to deliver applications that grow with your business.",
-    "image": "https://res.cloudinary.com/dxkxzqc77/image/upload/v1767464245/blog-images/rasxlxvejxzhtxd5mwej.png",
-    "author": "Kamlesh Kumar Shah",
-    "date": "February 2, 2026",
-    "views": 19,
-    "categories": [
-      "Software Development",
-      "Scalable Architecture",
-      "Cybersecurity",
-      "Cloud Computing",
-      "DevOps",
-      "Microservices",
-      "API Development",
-      "Backend Development",
-      "System Design",
-      "Clean Code",
-      "CI/CD",
-      "Docker",
-      "Kubernetes",
-      "Node.js",
-      "Future-Ready Tech"
-    ],
-    "content": [
-      {
-        "type": "section",
-        "heading": "Building Software That Stands the Test of Time",
-        "paragraphs": [
-          "In a rapidly evolving digital landscape, the true measure of great software is not just whether it works today — but whether it can scale, adapt, and remain secure as demands grow and technology shifts. Modern software development demands a strategic, architecture-first mindset that prioritizes long-term resilience over short-term convenience. Organizations that invest in scalable, secure, and future-ready solutions gain a decisive competitive advantage in an increasingly digital-first world."
-        ]
-      },
-      {
-        "type": "section",
-        "heading": "What Makes Software Truly Scalable?",
-        "paragraphs": [
-          "Scalability means your application can handle growth — more users, more data, more transactions — without degrading in performance. Achieving this requires deliberate architectural choices from day one. Key principles include <strong>horizontal scaling, stateless service design, database sharding, caching strategies, and load balancing</strong>. Applications built with scalability in mind can expand seamlessly by adding more resources rather than rewriting entire systems.",
-          "Microservices architecture has emerged as the gold standard for scalable systems — breaking large monolithic applications into small, independently deployable services that can each be scaled, updated, and maintained separately. Combined with containerization tools like <strong>Docker and Kubernetes</strong>, teams can deploy updates with zero downtime and manage workloads efficiently across cloud environments."
-        ]
-      },
-      {
-        "type": "lifecycle-section",
-        "heading": "Core Pillars of Future-Ready Software Development",
-        "intro": "Building software that lasts requires mastering these foundational pillars:",
-        "subsections": [
-          {
-            "heading": "1. Clean and Modular Architecture",
-            "paragraph": "Well-structured code with clear separation of concerns ensures that individual components can be updated, replaced, or scaled independently. Clean architecture reduces technical debt and makes onboarding new developers significantly faster."
-          },
-          {
-            "heading": "2. Security by Design",
-            "paragraph": "Security cannot be an afterthought. Modern applications implement <strong>end-to-end encryption, OAuth 2.0 authentication, role-based access control (RBAC), and regular vulnerability audits</strong> from the earliest stages of development. A proactive security posture prevents breaches before they happen."
-          },
-          {
-            "heading": "3. CI/CD and DevOps Practices",
-            "paragraph": "Continuous Integration and Continuous Deployment pipelines automate testing, building, and releasing software. DevOps practices bridge the gap between development and operations teams, enabling faster release cycles, reliable deployments, and rapid rollback capabilities when issues arise."
-          },
-          {
-            "heading": "4. Cloud-Native Infrastructure",
-            "paragraph": "Designing for the cloud means leveraging managed services, auto-scaling groups, serverless functions, and infrastructure-as-code (IaC) tools like Terraform. Cloud-native applications are inherently more resilient, cost-effective, and globally distributable than on-premise alternatives."
-          },
-          {
-            "heading": "5. Observability and Monitoring",
-            "paragraph": "Future-ready systems are built to be observable — with comprehensive logging, real-time metrics, distributed tracing, and alerting in place from launch. Tools like Prometheus, Grafana, and Datadog provide the visibility needed to identify and resolve issues before they impact users."
-          }
-        ]
-      },
-      {
-        "type": "section",
-        "heading": "The Role of APIs in Modern Software Ecosystems",
-        "paragraphs": [
-          "APIs are the connective tissue of modern software architecture. Well-designed RESTful or GraphQL APIs enable seamless integration between services, third-party platforms, and client applications. An <strong>API-first development approach</strong> ensures that every feature is accessible, reusable, and independently testable — accelerating both internal development and external partnership opportunities.",
-          "Versioned APIs with thorough documentation and rate limiting protect system stability while enabling external developers to build on top of your platform, creating powerful network effects and expanding the reach of your product."
-        ]
-      },
-      {
-        "type": "list-section",
-        "heading": "Technologies Powering Future-Ready Development",
-        "items": [
-          { "bold": "Node.js and React", "text": "for high-performance full-stack JavaScript applications" },
-          { "bold": "Docker and Kubernetes", "text": "for containerized, scalable deployment and orchestration" },
-          { "bold": "GraphQL and REST APIs", "text": "for flexible, efficient data communication between services" },
-          { "bold": "PostgreSQL and MongoDB", "text": "for reliable relational and document-based data storage" },
-          { "bold": "Redis", "text": "for ultra-fast caching and session management" },
-          { "bold": "Terraform and AWS/GCP/Azure", "text": "for infrastructure-as-code and cloud-native deployments" }
-        ]
-      },
-      {
-        "type": "section",
-        "heading": "Delivering Value at Every Stage",
-        "paragraphs": [
-          "The best software development teams don't just ship features — they deliver measurable business outcomes. By combining agile methodologies, user-centered design, and engineering excellence, modern development teams can iterate rapidly, respond to feedback, and continuously improve the product experience.",
-          "Investing in scalable, secure, and future-ready software is not a cost — it is a strategic asset. Organizations that build on solid technical foundations spend less time firefighting, onboard users faster, and are better positioned to seize new market opportunities as they arise."
-        ]
->>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
+    
       }
     ]
   }
