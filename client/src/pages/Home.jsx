@@ -290,6 +290,69 @@ const Home = () => {
         </div>
       </section>
 
+      {/* VIDEO SHOWCASE SECTION */}
+{/* ========================= */}
+
+<section className="relative z-10 py-16 md:py-20 lg:py-8 bg-white dark:bg-[#0a0f2e] overflow-hidden transition-colors duration-300">
+  <div className="max-w-7xl mx-auto px-6">
+    {/* Heading */}
+    <div
+      className="w-full mx-auto text-center"
+      style={{ maxWidth: "570px", marginBottom: "80px" }}
+    >
+      <h2 className="mb-4 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        Experience Our Cutting-Edge Solutions
+      </h2>
+
+      <p className="text-base leading-relaxed text-gray-600 dark:text-gray-300 md:text-lg">
+        Discover how our innovative technology and expert team deliver
+        high-performance applications, seamless integrations, and scalable
+        solutions tailored to your business needs.
+      </p>
+    </div>
+
+    {/* Video */}
+    <div className="flex flex-wrap -mx-4">
+      <div className="w-full px-4">
+        <div className="mx-auto max-w-[900px] overflow-hidden rounded-2xl shadow-2xl border border-gray-200 dark:border-white/10">
+          <div className="relative aspect-[77/40]">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/shap.mp4" type="video/mp4" />
+            </video>
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/30"></div>
+
+            {/* Play Button */}
+            <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center">
+              <button className="flex h-[75px] w-[75px] items-center justify-center rounded-full bg-white/80 dark:bg-white/20 dark:text-white text-blue-600 transition hover:bg-white dark:hover:bg-white/30 shadow-xl">
+                <svg
+                  width="18"
+                  height="20"
+                  viewBox="0 0 16 18"
+                  className="fill-current ml-1"
+                >
+                  <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</section>
+
+
       {/* Empowering Section */}
       <section className="py-24 section-gradient overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
