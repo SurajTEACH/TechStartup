@@ -15,7 +15,7 @@ const blogData = [
       "AI-powered systems help businesses improve productivity, reduce operational costs, and unlock data-driven innovation across every industry.",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
-    author: "KAMLESH KUMAR SHAH",
+    author: "KAMLESH SHAH",
     date: "March 12, 2026",
     views: 154,
     categories: [
@@ -91,7 +91,7 @@ const blogData = [
       "Modern cybersecurity strategies combine encryption, authentication, monitoring, and proactive defense systems to secure digital infrastructure.",
     image:
       "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200&auto=format&fit=crop",
-    author: "KAMLESH KUMAR SHAH",
+    author: "KAMLESH SHAH",
     date: "March 20, 2026",
     views: 132,
     categories: [
@@ -163,7 +163,7 @@ const blogData = [
       "Modern cloud platforms provide flexible infrastructure, high availability, and secure environments for applications, storage, and enterprise services.",
     image:
       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
-    author: "KAMLESH KUMAR SHAH",
+    author: "KAMLESH SHAH",
     date: "April 2, 2026",
     views: 178,
     categories: [
@@ -236,7 +236,7 @@ const blogData = [
       "IoT technology enables real-time communication between connected devices, improving automation, monitoring, and operational efficiency.",
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
-    author: "KAMLESH KUMAR SHAH",
+    author: "KAMLESH SHAH",
     date: "April 10, 2026",
     views: 121,
     categories: [
@@ -308,7 +308,7 @@ const blogData = [
       "Modern mobile app development focuses on performance, user experience, security, and cross-platform compatibility for scalable digital products.",
     image:
       "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1200&auto=format&fit=crop",
-    author: "KAMLESH KUMAR SHAH",
+    author: "KAMLESH SHAH",
     date: "April 18, 2026",
     views: 164,
     categories: [
@@ -382,7 +382,7 @@ const blogData = [
       "Modern digital marketing combines SEO, social media, content strategy, and data analytics to build strong online brands and customer engagement.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-    author: "KAMLESH KUMAR SHAH",
+    author: "KAMLESH SHAH",
     date: "May 1, 2026",
     views: 201,
     categories: [
