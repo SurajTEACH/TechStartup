@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+<<<<<<< HEAD
 import { ThemeProvider } from './context/ThemeContext';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,10 +11,20 @@ import Careers from './pages/Careers';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import WhatsAppButton from './components/WhatsAppButton';
+=======
+import { ThemeProvider } from './context/ThemeContext.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Blog from './pages/Blog.jsx';
+import Support from './pages/Support.jsx';
+import Careers from './pages/Careers.jsx';
+import SignIn from './pages/SignIn.jsx';
+import SignUp from './pages/SignUp.jsx';
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
 
-import { Terms, Privacy, Refund } from './pages/PolicyPages';
-import BlogDetails from './pages/BlogDetails';
-import ProjectDetails from './pages/ProjectDetails';
+import { Terms, Privacy, Refund } from './pages/PolicyPages.jsx';
+import BlogDetails from './pages/BlogDetails.jsx';
+import ProjectDetails from './pages/ProjectDetails.jsx';
 
 const ScrollToTopOnNav = () => {
   const { pathname } = useLocation();

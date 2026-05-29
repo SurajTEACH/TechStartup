@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../context/ThemeContext.jsx";
 
 const bin =
   "01001000  01100101  01101100  01101100  01101111  00100000  01010111  01101111  01110010  01101100  01100100  ";
@@ -199,7 +199,11 @@ const Footer = () => {
           <div className="footer-col-2">
             <FHead>Address II</FHead>
             <CItem icon={<PhoneIcon />} label="MOBILE" value="+91 7049776747" href="tel:+917049776747" />
+<<<<<<< HEAD
             <CItem icon={<LocIcon />} value="First Floor, Tamara Uprise Rahatani, Pune, 41101" />
+=======
+            <CItem icon={<LocIcon />} value="First Floor, Tamara Uprise Rahatani, Pune, 411017" />
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
 
             <div style={{ marginTop: 12 }}>
               <p
@@ -281,7 +285,11 @@ const Footer = () => {
             />
           </div>
 
+<<<<<<< HEAD
           {/* Col 4 — Support + Social Media */}
+=======
+          {/* Col 4 — Support */}
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
           <div className="footer-col-4">
             <FHead>Support</FHead>
             <FLinks
@@ -292,6 +300,7 @@ const Footer = () => {
                 { name: "Privacy Policy",    to: "/privacy" },
               ]}
             />
+<<<<<<< HEAD
             
             {/* Social Media Section */}
             <FHead style={{ marginTop: 20 }}>Follow Us</FHead>
@@ -389,6 +398,8 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+=======
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
           </div>
         </div>
 
@@ -431,6 +442,12 @@ const Footer = () => {
             <span>in India</span>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+
+       
+        
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
       </footer>
     </>
   );
@@ -509,6 +526,21 @@ const LocIcon = () => (
   <svg style={{ width: 14, height: 14, stroke: "#3b82f6" }} fill="none" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+<<<<<<< HEAD
+=======
+  </svg>
+);
+
+const PhoneIcon = () => (
+  <svg style={{ width: 14, height: 14, stroke: "#22c55e" }} fill="none" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+  </svg>
+);
+
+const MailIcon = () => (
+  <svg style={{ width: 14, height: 14, stroke: "#a855f7" }} fill="none" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
   </svg>
 );
 

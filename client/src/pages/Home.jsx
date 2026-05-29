@@ -162,9 +162,17 @@ const monthlyPricing = [
   },
 ];
 
+<<<<<<< HEAD
 // ==============================
 // HOME COMPONENT
 // ==============================
+=======
+const blogs = [
+  { category: 'Blockchain Technology', title: 'Blockchain Technology', desc: 'Blockchain is a shared, immutable digital ledger, enabling the recording of transactions and the tra...', author: 'CodeSetu Technologies', date: 'Apr 14, 2026', img: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&q=80', authorImg: '' },
+  { category: 'Software Development', title: 'The Importance of Custom Software Development for Modern Businesses', desc: 'In today\'s competitive digital landscape, businesses need more than off-the-shelf solutions to stay ...', author: 'Kamlesh Kumar Shah', date: 'Jan 4, 2026', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&q=80', authorImg: 'https://i.pravatar.cc/40?img=12' },
+  { category: 'Software Development', title: 'Software Development: Building Scalable, Secure, and Future-Ready Solutions', desc: 'In today\'s digital world, software development plays a critical role in shaping how businesses opera...', author: 'Kamlesh Kumar Shah', date: 'Jan 4, 2026', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80', authorImg: 'https://i.pravatar.cc/40?img=12' },
+];
+>>>>>>> 0655eba6882c0e0d7c157d59f5db4597f38ddc63
 
 const Home = () => {
   const [pricingYearly, setPricingYearly] = useState(false);
