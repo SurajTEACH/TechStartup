@@ -1,19 +1,19 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
-import { ThemeProvider } from './context/ThemeContext';
-import Home from './pages/Home';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Support from './pages/Support';
-import Careers from './pages/Careers';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import WhatsAppButton from './components/WhatsAppButton';
+import { ThemeProvider } from "./context/ThemeContext";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Support from "./pages/Support";
+import Careers from "./pages/Careers";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import WhatsAppButton from "./components/WhatsAppButton";
 
-import { Terms, Privacy, Refund } from './pages/PolicyPages.jsx';
-import BlogDetails from './pages/BlogDetails.jsx';
-import ProjectDetails from './pages/ProjectDetails.jsx';
+import { Terms, Privacy, Refund } from "./pages/PolicyPages.jsx";
+import BlogDetails from "./pages/BlogDetails.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx";
 
 const ScrollToTopOnNav = () => {
   const { pathname } = useLocation();
@@ -36,15 +36,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
 
-          <Route
-            path="/blog/:slug"
-            element={<BlogDetails />}
-          />
+          <Route path="/blog/:slug" element={<BlogDetails />} />
 
-          <Route
-            path="/projects/:slug"
-            element={<ProjectDetails />}
-          />
+          <Route path="/projects/:slug" element={<ProjectDetails />} />
 
           <Route path="/support" element={<Support />} />
           <Route path="/careers" element={<Careers />} />
