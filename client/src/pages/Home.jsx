@@ -400,17 +400,11 @@ const Home = () => {
 
                 {/* Main Card */}
                 <div className="relative card-style rounded-3xl p-6 border border-blue-500/20">
-                  <div className="relative card-style rounded-3xl p-6 border border-blue-500/20 h-[400px] overflow-hidden">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover rounded-2xl"
-                    >
-                      <source src="/aboutSection.mp4" type="video/mp4" />
-                    </video>
-                  </div>
+                 <img
+                    src="/about.svg"
+                    alt="About Section"
+                    className="w-full h-[400px] object-cover rounded-2xl border border-blue-500/20"
+                  />
 
                   {/* Floating Badge */}
                   <div className="absolute -top-5 -right-5 bg-accent text-black text-sm font-bold px-4 py-2 rounded-full shadow-lg">
